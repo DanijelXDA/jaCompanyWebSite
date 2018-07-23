@@ -1,8 +1,4 @@
 /*
-Author: XpeedStudio
-Author URI: http://themeforest.net/user/XpeedStudio/portfolio
-*/
-/*
  ============== table of content =================
   header search
   header nav
@@ -21,7 +17,6 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
   social list
   footer
   offset cart 
-  preloader
 */
 /* ==========================================================================
    Author's custom styles
@@ -2416,87 +2411,3 @@ canvas {
   top: 0;
   width: 100%;
   height: 100%; }
-
-/*---------------------------- pre loader -----------------*/
-.preloader {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  z-index: 9999;
-  background-color: #001ec8;
-  -webkit-transition: all 1s ease-in;
-  transition: all 1s ease-in; }
-
-.preloader.loaded {
-  top: -150%; }
-
-@-webkit-keyframes rotate {
-  100% {
-    -webkit-transform: rotate3d(0, 0, 1, 360deg);
-            transform: rotate3d(0, 0, 1, 360deg); } }
-
-@keyframes rotate {
-  100% {
-    -webkit-transform: rotate3d(0, 0, 1, 360deg);
-            transform: rotate3d(0, 0, 1, 360deg); } }
-
-.xs-preload {
-  -webkit-transform: rotate3d(0, 0, 1, -90deg);
-          transform: rotate3d(0, 0, 1, -90deg);
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  margin: auto;
-  left: 0; }
-  .xs-preload circle {
-    fill: none;
-    stroke: #444;
-    stroke-width: 3px;
-    will-change: transform;
-    -webkit-transform-origin: center center;
-            transform-origin: center center;
-    -webkit-animation-name: rotate;
-            animation-name: rotate;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite; }
-  .xs-preload .inner {
-    stroke: #00acc8;
-    stroke-dasharray: 200.96;
-    stroke-dashoffset: 160.96;
-    -webkit-animation-delay: 200ms;
-            animation-delay: 200ms;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s; }
-  .xs-preload .middle {
-    stroke: #e208bd;
-    stroke-dasharray: 238.64;
-    stroke-dashoffset: 178.64;
-    -webkit-animation-delay: 100ms;
-            animation-delay: 100ms;
-    -webkit-animation-duration: 1.5s;
-            animation-duration: 1.5s; }
-  .xs-preload .outer {
-    stroke: #54ef2d;
-    stroke-dasharray: 276.32;
-    stroke-dashoffset: 176.32;
-    -webkit-animation-delay: 300ms;
-            animation-delay: 300ms;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s; }
-
-a.cencel-preloader {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  background: #ffff;
-  display: inline-block;
-  padding: 5px 20px;
-  text-transform: capitalize;
-  border-radius: 36px;
-  color: #001ec8;
-  font-size: 14px; }
